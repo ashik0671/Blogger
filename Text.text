@@ -2809,6 +2809,43 @@ div.widget.Blog .post-outer-container .post-body .snippet-thumbnail{
   div.widget.Blog .post-share-buttons-bottom{z-index:6}
 }
 
+
+/* Fix: keep the site-wide sidebar menu button visible */
+.centered-top-container .hamburger-menu,
+.centered-top .hamburger-menu,
+button.hamburger-menu {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  color: #172554 !important;
+  background: transparent;
+  min-width: 44px;
+  min-height: 44px;
+  flex-shrink: 0;
+}
+.centered-top-container .hamburger-menu svg,
+.centered-top .hamburger-menu svg,
+button.hamburger-menu svg {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+@media (max-width: 767px) {
+  .centered-top-container .hamburger-menu,
+  .centered-top .hamburger-menu,
+  button.hamburger-menu {
+    color: #172554 !important;
+    margin-inline: 4px;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

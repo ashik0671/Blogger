@@ -3230,6 +3230,106 @@ body.page-view .post-body img {
   }
 }
 
+
+/* NewsBDUS24H article media and long-content polish */
+body.item-view .post-body,
+body.static_page .post-body,
+body.page-view .post-body {
+  min-width: 0;
+}
+body.item-view .post-body img,
+body.static_page .post-body img,
+body.page-view .post-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border-radius: 12px;
+}
+body.item-view .post-body figure,
+body.static_page .post-body figure,
+body.page-view .post-body figure {
+  max-width: 100%;
+  margin: 18px 0;
+}
+body.item-view .post-body figcaption,
+body.static_page .post-body figcaption,
+body.page-view .post-body figcaption {
+  color: var(--nb-muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 7px;
+  text-align: center;
+}
+body.item-view .post-body table,
+body.static_page .post-body table,
+body.page-view .post-body table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+}
+body.item-view .post-body th,
+body.item-view .post-body td,
+body.static_page .post-body th,
+body.static_page .post-body td,
+body.page-view .post-body th,
+body.page-view .post-body td {
+  border: 1px solid var(--nb-line);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+body.item-view .post-body th,
+body.static_page .post-body th,
+body.page-view .post-body th {
+  background: #edf4ff;
+  color: var(--nb-ink);
+  font-weight: 800;
+}
+body.item-view .post-body pre,
+body.static_page .post-body pre,
+body.page-view .post-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f3f6fa;
+}
+body.item-view .post-body iframe,
+body.static_page .post-body iframe,
+body.page-view .post-body iframe,
+body.item-view .post-body video,
+body.static_page .post-body video,
+body.page-view .post-body video {
+  max-width: 100%;
+}
+body.item-view .post-body hr,
+body.static_page .post-body hr,
+body.page-view .post-body hr {
+  border: 0;
+  border-top: 1px solid var(--nb-line);
+  margin: 24px 0;
+}
+@media (max-width: 767px) {
+  body.item-view .post-body img,
+  body.static_page .post-body img,
+  body.page-view .post-body img {
+    border-radius: 9px;
+    margin: 12px auto;
+  }
+  body.item-view .post-body th,
+  body.item-view .post-body td,
+  body.static_page .post-body th,
+  body.static_page .post-body td,
+  body.page-view .post-body th,
+  body.page-view .post-body td {
+    padding: 8px 10px;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

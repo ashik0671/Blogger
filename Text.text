@@ -2766,6 +2766,49 @@ div.widget.Blog .post-outer-container .post-body{
   clear:both;
 }
 
+
+/* Fix Blogger three-dot/overflow menus being clipped inside post cards */
+div.widget.Blog .blog-posts .post-outer-container{
+  overflow:visible!important;
+  isolation:isolate;
+}
+div.widget.Blog .post-header,
+div.widget.Blog .post-header-line-1,
+div.widget.Blog .post-footer,
+div.widget.Blog .post-share-buttons,
+div.widget.Blog .post-share-buttons-top,
+div.widget.Blog .post-share-buttons-bottom,
+div.widget.Blog .overflowable-container,
+div.widget.Blog .overflowable-contents{
+  overflow:visible!important;
+  max-width:100%;
+}
+div.widget.Blog .post-header-line-1{
+  position:relative;
+  z-index:3;
+}
+div.widget.Blog .post-share-buttons,
+div.widget.Blog .post-share-buttons-top,
+div.widget.Blog .post-share-buttons-bottom{
+  position:relative;
+  z-index:5;
+}
+div.widget.Blog .post-share-buttons button,
+div.widget.Blog .post-share-buttons a,
+div.widget.Blog .post-header button,
+div.widget.Blog .post-header a{
+  touch-action:manipulation;
+}
+div.widget.Blog .post-outer-container .post-body .snippet-thumbnail{
+  border-radius:10px;
+}
+@media(max-width:767px){
+  div.widget.Blog .post-header-line-1{min-height:28px}
+  div.widget.Blog .post-share-buttons,
+  div.widget.Blog .post-share-buttons-top,
+  div.widget.Blog .post-share-buttons-bottom{z-index:6}
+}
+
 ]]></b:skin>
 
     <b:template-skin>

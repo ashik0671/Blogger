@@ -3042,6 +3042,51 @@ div.widget.Blog .post-footer {
   }
 }
 
+
+/* NewsBDUS24H footer visual refinement */
+.footer {
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-top: 3px solid var(--nb-red);
+}
+.footer a {
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.footer a:hover,
+.footer a:focus-visible {
+  text-decoration: underline;
+  outline-offset: 3px;
+}
+.footer .widget {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+.footer .widget .title,
+.footer .widget h2,
+.footer .widget h3 {
+  color: #fff !important;
+}
+.footer .Attribution,
+.footer .attribution {
+  color: #dbe7f5;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.footer .Attribution a,
+.footer .attribution a {
+  color: #fff !important;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 20px 12px calc(20px + env(safe-area-inset-bottom, 0));
+  }
+  .footer .widget {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

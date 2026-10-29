@@ -4119,6 +4119,69 @@ button, input[type="submit"], .flat-button, a {
   }
 }
 
+
+/* Fix invisible top-right search icon while preserving Blogger's search toggle */
+.centered-top-container .search {
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 20;
+}
+.centered-top-container .search-expand,
+.centered-top-container button.search-expand.touch-icon-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 !important;
+  position: relative;
+  z-index: 30;
+  border: 1px solid var(--nb-blue) !important;
+  border-radius: 10px !important;
+  background: var(--nb-blue) !important;
+  color: #fff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  cursor: pointer;
+}
+.centered-top-container .search-expand svg,
+.centered-top-container .search-expand .search-expand-icon,
+.centered-top-container .search-expand svg path,
+.centered-top-container .search-expand svg circle,
+.centered-top-container .search-expand svg line {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #fff !important;
+  stroke: #fff !important;
+  fill: none;
+}
+.centered-top-container .search-expand svg {
+  width: 22px !important;
+  height: 22px !important;
+  flex: 0 0 22px;
+}
+.centered-top-container .search-expand:hover {
+  background: #1e40af !important;
+}
+.centered-top-container .search-expand:focus-visible {
+  outline: 3px solid #06b6d4 !important;
+  outline-offset: 3px;
+}
+.centered-top-container .search.focused .search-expand {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .centered-top-container .search-expand,
+  .centered-top-container button.search-expand.touch-icon-button {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

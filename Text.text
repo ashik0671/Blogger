@@ -3087,6 +3087,87 @@ div.widget.Blog .post-footer {
   }
 }
 
+
+/* NewsBDUS24H static-page reading experience */
+body.item-view .post-outer-container,
+body.static_page .post-outer-container,
+body.page-view .post-outer-container {
+  min-width: 0;
+}
+body.item-view .post-body,
+body.static_page .post-body,
+body.page-view .post-body {
+  color: #344054;
+  font-size: 16px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+body.item-view .post-body h1,
+body.item-view .post-body h2,
+body.item-view .post-body h3,
+body.static_page .post-body h1,
+body.static_page .post-body h2,
+body.static_page .post-body h3,
+body.page-view .post-body h1,
+body.page-view .post-body h2,
+body.page-view .post-body h3 {
+  color: var(--nb-ink);
+  line-height: 1.35;
+  margin: 1.5em 0 .65em;
+  overflow-wrap: anywhere;
+}
+body.item-view .post-body h2,
+body.static_page .post-body h2,
+body.page-view .post-body h2 {
+  border-left: 4px solid var(--nb-red);
+  padding-left: 12px;
+}
+body.item-view .post-body p,
+body.static_page .post-body p,
+body.page-view .post-body p {
+  margin: 0 0 1.1em;
+}
+body.item-view .post-body ul,
+body.item-view .post-body ol,
+body.static_page .post-body ul,
+body.static_page .post-body ol,
+body.page-view .post-body ul,
+body.page-view .post-body ol {
+  padding-left: 1.5em;
+  margin: 0 0 1.2em;
+}
+body.item-view .post-body a,
+body.static_page .post-body a,
+body.page-view .post-body a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+body.item-view .post-body blockquote,
+body.static_page .post-body blockquote,
+body.page-view .post-body blockquote {
+  border-left: 4px solid var(--nb-blue);
+  background: #f3f7fc;
+  border-radius: 0 10px 10px 0;
+  margin: 1.25em 0;
+  padding: 14px 16px;
+}
+body.item-view .post-body img,
+body.static_page .post-body img,
+body.page-view .post-body img {
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  body.item-view .post-body,
+  body.static_page .post-body,
+  body.page-view .post-body {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

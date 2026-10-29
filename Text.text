@@ -2653,6 +2653,78 @@ body.collapsed-header.item-view .centered-top-container .blog-name{
 margin-left:40px
 }
 }
+
+/* NewsBDUS24H responsive news portal refresh */
+:root{--nb-blue:#123b72;--nb-red:#e53935;--nb-ink:#172033;--nb-muted:#64748b;--nb-line:#e5eaf1;--nb-paper:#fff;--nb-soft:#f4f7fb}
+html{scroll-behavior:smooth}
+body{background:var(--nb-soft);color:var(--nb-ink);font-family:Roboto,Arial,sans-serif;line-height:1.55}
+a{transition:color .18s ease}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #5ba7ff;outline-offset:3px}
+.page{background:var(--nb-soft)}
+.page_body{max-width:1240px;margin:0 auto;background:transparent}
+.centered{max-width:1240px}
+.centered-top-container{background:#fff!important;box-shadow:0 2px 12px rgba(16,36,68,.08);border-bottom:3px solid var(--nb-red)}
+.centered-top{max-width:1240px;margin:0 auto;min-height:76px;padding:10px 22px;box-sizing:border-box}
+.blog-name .header-widget h1,.blog-name .header-widget h1 a{color:var(--nb-blue)!important;font-size:clamp(22px,3vw,34px);font-weight:900;letter-spacing:-.5px;line-height:1.15;text-decoration:none}
+.search input{border:1px solid var(--nb-line);border-radius:8px;background:#f8fafc;color:var(--nb-ink);padding:11px 13px}
+.search .search-action{border-radius:8px;background:var(--nb-blue);color:#fff}
+#page_body{padding-top:22px}
+.page_body .centered-top-placeholder{height:0}
+.page_body .centered-bottom,.page_body .centered-top{box-sizing:border-box}
+.main.section,.main-outer-container,.main-outer{min-width:0}
+.widget{margin-bottom:22px}
+.widget-title,.widget h2,.widget h3{color:var(--nb-blue)}
+div.widget.Blog .blog-posts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+div.widget.Blog .blog-posts .post-outer-container{background:var(--nb-paper);border:1px solid var(--nb-line);border-radius:14px;overflow:hidden;padding:0!important;box-shadow:0 3px 14px rgba(16,36,68,.045);transition:transform .18s ease,box-shadow .18s ease}
+div.widget.Blog .blog-posts .post-outer-container:hover{transform:translateY(-2px);box-shadow:0 9px 24px rgba(16,36,68,.10)}
+div.widget.Blog .blog-posts .post-outer-container .post-outer{padding:0!important}
+div.widget.Blog .post{margin:0!important;padding:18px!important}
+div.widget.Blog .post-title,div.widget.Blog .post-title a{color:var(--nb-ink)!important;font-size:clamp(18px,2vw,23px);font-weight:800;line-height:1.42;text-decoration:none}
+div.widget.Blog .post-title a:hover{color:var(--nb-red)!important}
+div.widget.Blog .post-header,.post-footer,.post-timestamp{color:var(--nb-muted);font-size:12px}
+div.widget.Blog .post-body{color:#344054;font-size:16px;line-height:1.8}
+div.widget.Blog .post-body img{max-width:100%;height:auto;border-radius:10px}
+div.widget.Blog .post-body .snippet-thumbnail{float:none!important;display:block;margin:0 0 14px!important;width:100%!important;max-width:none!important}
+div.widget.Blog .post-body .snippet-thumbnail img{display:block;width:100%!important;height:auto!important;max-width:none!important;max-height:none!important;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+div.widget.FeaturedPost{background:#fff;border:1px solid var(--nb-line);border-radius:16px;padding:18px;box-shadow:0 3px 14px rgba(16,36,68,.05)}
+div.widget.FeaturedPost h3,div.widget.FeaturedPost h3 a{font-size:clamp(22px,3vw,30px);font-weight:900;line-height:1.35;color:var(--nb-ink);text-decoration:none}
+div.widget.FeaturedPost img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
+div.widget.PopularPosts{background:#fff;border:1px solid var(--nb-line);border-radius:14px;padding:16px}
+div.widget.PopularPosts .item-title a{font-weight:700;color:var(--nb-ink);line-height:1.45}
+div.widget.PopularPosts .item-thumbnail img{width:96px;height:72px;max-width:none;max-height:none;object-fit:cover;border-radius:8px}
+.widget.Label .cloud-label a,.widget.Label .list-label a{display:inline-block;background:#edf4ff;border:1px solid #d7e6fb;border-radius:999px;color:var(--nb-blue)!important;padding:6px 11px;margin:4px;text-decoration:none;font-size:13px;font-weight:700}
+.widget.Label .cloud-label a:hover,.widget.Label .list-label a:hover{background:var(--nb-blue);color:#fff!important}
+.sidebar-container,.sidebar_top,.sidebar_bottom{min-width:0}
+.sidebar-container .widget{background:#fff;border:1px solid var(--nb-line);border-radius:12px;padding:14px}
+.footer{background:#102b50;color:#e8eef7}
+.footer a{color:#fff}
+.blog-pager a,.blog-pager-older-link,.blog-pager-newer-link{display:inline-block;background:var(--nb-blue);color:#fff!important;border-radius:8px;padding:10px 15px;text-decoration:none}
+@media(max-width:767px){
+ body{font-size:15px}
+ .centered-top{min-height:64px;padding:8px 12px}
+ .centered-top-container{border-bottom-width:3px}
+ .blog-name .header-widget h1,.blog-name .header-widget h1 a{font-size:22px}
+ #page_body{padding:12px 10px 24px}
+ .page_body{padding-left:0!important;padding-right:0!important}
+ div.widget.Blog .blog-posts{display:block}
+ div.widget.Blog .blog-posts .post-outer-container{margin:0 0 14px!important;border-radius:12px}
+ div.widget.Blog .post{padding:13px!important}
+ div.widget.Blog .post-title,div.widget.Blog .post-title a{font-size:18px;line-height:1.45}
+ div.widget.Blog .post-body{font-size:15px;line-height:1.75}
+ div.widget.Blog .post-body .snippet-thumbnail{margin:0 0 12px!important}
+ div.widget.Blog .post-body .snippet-thumbnail img{aspect-ratio:16/9;border-radius:9px}
+ div.widget.FeaturedPost{padding:13px;border-radius:12px;margin-bottom:15px}
+ div.widget.FeaturedPost h3,div.widget.FeaturedPost h3 a{font-size:21px;line-height:1.4}
+ .widget{margin-bottom:15px}
+ div.widget.PopularPosts{padding:12px}
+ .widget.PopularPosts div.item-thumbnail{margin:0 12px 8px 0}
+ .widget.PopularPosts div.item-thumbnail img{width:88px;height:66px;max-width:none;max-height:none;object-fit:cover}
+ .search input{max-width:100%;box-sizing:border-box}
+ .post-body table{display:block;max-width:100%;overflow-x:auto}
+ .post-body iframe{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
 ]]></b:skin>
 
     <b:template-skin>

@@ -3533,6 +3533,28 @@ html {
   }
 }
 
+
+/* Keep the sidebar drawer closed until the menu button is activated */
+.sidebar-container {
+  transition: transform .28s ease;
+  will-change: transform;
+}
+.sidebar-container.sidebar-invisible {
+  transform: translateX(-105%) !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body.sidebar-visible .sidebar-container {
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-container {
+    transition: none;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

@@ -2922,6 +2922,67 @@ button.hamburger-menu svg {
   }
 }
 
+
+/* NewsBDUS24H homepage news-card refinement */
+div.widget.Blog .blog-posts .post-outer-container {
+  min-width: 0;
+}
+div.widget.Blog .post-body .snippet-thumbnail a {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+div.widget.Blog .post-body .snippet-thumbnail img {
+  transition: transform .22s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  div.widget.Blog .post-outer-container:hover .snippet-thumbnail img {
+    transform: scale(1.025);
+  }
+}
+div.widget.Blog .post-header,
+div.widget.Blog .post-header-line-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  line-height: 1.5;
+}
+div.widget.Blog .post-title a,
+div.widget.Blog .post-body a {
+  overflow-wrap: anywhere;
+}
+div.widget.Blog .post-body .snippet-item,
+div.widget.Blog .post-body .snippet-item p {
+  margin-top: 0;
+}
+div.widget.Blog .post-body .snippet-item p:last-child {
+  margin-bottom: 0;
+}
+div.widget.Blog .post-footer {
+  border-top: 1px solid var(--nb-line);
+  margin-top: 14px;
+  padding-top: 10px;
+}
+@media (max-width: 767px) {
+  div.widget.Blog .post-body .snippet-thumbnail a {
+    border-radius: 9px;
+  }
+  div.widget.Blog .post-footer {
+    margin-top: 11px;
+    padding-top: 9px;
+  }
+  div.widget.Blog .post-title,
+  div.widget.Blog .post-title a {
+    overflow-wrap: anywhere;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  div.widget.Blog .post-body .snippet-thumbnail img {
+    transition: none;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

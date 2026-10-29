@@ -3807,6 +3807,76 @@ body.item-view div.widget.Blog .post-share-buttons button {
   }
 }
 
+
+/* Single-post byline, date and sharing toolbar refinement */
+body.item-view div.widget.Blog .post-header {
+  margin-bottom: 18px;
+}
+body.item-view div.widget.Blog .post-header-line-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+body.item-view div.widget.Blog .post-header .byline,
+body.item-view div.widget.Blog .post-footer .byline {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 100%;
+  color: var(--nb-muted);
+  font-size: 13px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+body.item-view div.widget.Blog .post-header .post-author,
+body.item-view div.widget.Blog .post-header .post-timestamp {
+  padding: 4px 9px;
+  border: 1px solid var(--nb-line);
+  border-radius: 999px;
+  background: #f8fafc;
+}
+body.item-view div.widget.Blog .post-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+body.item-view div.widget.Blog .post-share-buttons,
+body.item-view div.widget.Blog .share-buttons-container {
+  max-width: 100%;
+}
+body.item-view div.widget.Blog .post-share-buttons a,
+body.item-view div.widget.Blog .post-share-buttons button {
+  min-width: 40px;
+  min-height: 40px;
+  touch-action: manipulation;
+}
+body.item-view div.widget.Blog .author-profile {
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid var(--nb-line);
+  border-radius: 12px;
+  background: #f8fafc;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 767px) {
+  body.item-view div.widget.Blog .post-header {
+    margin-bottom: 14px;
+  }
+  body.item-view div.widget.Blog .post-header-line-1 {
+    gap: 6px 8px;
+  }
+  body.item-view div.widget.Blog .post-header .byline,
+  body.item-view div.widget.Blog .post-footer .byline {
+    font-size: 12px;
+  }
+  body.item-view div.widget.Blog .author-profile {
+    padding: 13px;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

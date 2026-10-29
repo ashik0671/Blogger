@@ -2725,6 +2725,47 @@ div.widget.PopularPosts .item-thumbnail img{width:96px;height:72px;max-width:non
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
+
+/* Fix: keep post headlines out of the thumbnail image area */
+div.widget.Blog .post-title,
+div.widget.Blog .post-title a,
+body.item-view .post-title,
+body.item-view .post-title a,
+div.widget.FeaturedPost h3,
+div.widget.FeaturedPost h3 a{
+  position:static!important;
+  inset:auto!important;
+  display:block;
+  float:none!important;
+  clear:both;
+  transform:none!important;
+  background:transparent!important;
+  text-shadow:none!important;
+  box-shadow:none!important;
+  opacity:1;
+  z-index:auto!important;
+}
+div.widget.Blog .post-body .snippet-thumbnail,
+div.widget.Blog .post-body .snippet-thumbnail a,
+div.widget.Blog .post-body .snippet-thumbnail img{
+  position:relative;
+}
+div.widget.Blog .post-body .snippet-thumbnail{
+  overflow:hidden;
+  line-height:0;
+}
+div.widget.Blog .post-body .snippet-thumbnail img{
+  display:block;
+  margin:0;
+}
+div.widget.Blog .post-outer-container .post-title{
+  margin:0 0 12px!important;
+  padding:0!important;
+}
+div.widget.Blog .post-outer-container .post-body{
+  clear:both;
+}
+
 ]]></b:skin>
 
     <b:template-skin>

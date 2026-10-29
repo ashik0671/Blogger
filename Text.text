@@ -4402,6 +4402,124 @@ body.item-view .comments iframe {
   }
 }
 
+
+
+/* Final audit pass: layout containment, readable links and print-friendly articles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+#page_body,
+#page_body .centered,
+#page_body .centered-bottom,
+.centered-top-container,
+.centered-top {
+  min-width: 0;
+  max-width: 100%;
+}
+#page_body .centered {
+  overflow-wrap: anywhere;
+}
+a {
+  text-underline-offset: 3px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  scroll-margin-block: 18px;
+}
+body.item-view .post-body h2,
+body.item-view .post-body h3,
+body.item-view .post-body h4,
+body.static_page .post-body h2,
+body.static_page .post-body h3,
+body.static_page .post-body h4 {
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  scroll-margin-top: 20px;
+}
+body.item-view .post-body ul,
+body.item-view .post-body ol,
+body.static_page .post-body ul,
+body.static_page .post-body ol {
+  padding-inline-start: 1.5em;
+}
+body.item-view .post-body li,
+body.static_page .post-body li {
+  margin-block: .35em;
+  line-height: 1.75;
+}
+body.item-view .post-body img,
+body.static_page .post-body img {
+  max-width: 100%;
+  height: auto;
+}
+body.item-view .post-body video,
+body.item-view .post-body iframe,
+body.static_page .post-body video,
+body.static_page .post-body iframe {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  #page_body .centered,
+  #page_body .centered-bottom,
+  .centered-top-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  body.item-view .post-body h2 { font-size: clamp(1.25rem, 5vw, 1.6rem); }
+  body.item-view .post-body h3 { font-size: clamp(1.1rem, 4.5vw, 1.35rem); }
+}
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+  }
+  .centered-top-container,
+  .sidebar-container,
+  #sidebar,
+  .blog-pager,
+  .post-share-buttons,
+  .share-buttons-container,
+  #comments,
+  .comments,
+  #footer,
+  .footer,
+  button,
+  .search {
+    display: none !important;
+  }
+  #page_body,
+  #page_body .centered,
+  .post-outer,
+  .post,
+  .post-body {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  h1, h2, h3, h4, blockquote, table {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+}
+
 ]]></b:skin>
 
     <b:template-skin>

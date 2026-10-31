@@ -5692,6 +5692,13 @@ body.static_page .post-body iframe {
   <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
     <data:post.body/>
   </div>
+  <!-- Adsterra Native Banner: show once at the end of individual posts. -->
+  <b:if cond='data:view.isPost'>
+    <div class='adsterra-native-post' style='clear:both;display:block;margin:24px auto;text-align:center;max-width:100%;'>
+      <script async='async' data-cfasync='false' src='https://bauval.org/21/150487a1578266e97de93c43d18519b6'></script>
+      <div id='container-150487a1578266e97de93c43d18519b6'></div>
+    </div>
+  </b:if>
 </b:includable>
                     <b:includable id='postBodySnippet' var='post'>
           <div class='container post-body entry-content' expr:id='&quot;post-snippet-&quot; + data:post.id'>
@@ -6358,9 +6365,7 @@ body.static_page .post-body iframe {
           </b:widget>
           <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<script async="async" data-cfasync="false" src="https://bauval.org/21/150487a1578266e97de93c43d18519b6"></script>
-<div id="container-150487a1578266e97de93c43d18519b6"></div>]]></b:widget-setting>
-            </b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[]]></b:widget-setting>
             <b:includable id='main'>
   <b:include name='widget-title'/>
   <div class='widget-content'>

@@ -6366,6 +6366,7 @@ body.static_page .post-body iframe {
           <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[]]></b:widget-setting>
+            </b:widget-settings>
             <b:includable id='main'>
   <b:include name='widget-title'/>
   <div class='widget-content'>

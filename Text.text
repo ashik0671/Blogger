@@ -6688,5 +6688,29 @@ body.static_page .post-body iframe {
     </aside>
 
     <b:template-script async='true' name='indie' version='1.0.0'/>
+
+<!-- Adsterra ad units: existing Native Banner remains in Blogger Layout -->
+<!-- Adsterra script ad unit -->
+<script data-cfasync="false" src="https://abscloud.org/1/5dc52a1cfd7f8e076ddb0f01325687af"></script>
+<!-- Adsterra script ad unit -->
+<script data-cfasync="false" src="https://bauval.org/14/ca7c30f8fe1cd164f0f00a45d532b9c1"></script>
+<!-- Adsterra 468x60 banner -->
+<div style="max-width:100%;overflow-x:auto;text-align:center;margin:16px auto;">
+  <script>
+    atOptions = {
+      'key' : 'b6a2c5d44e13ff16c24c70c1081bf5b0',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://bauval.org/22/b6a2c5d44e13ff16c24c70c1081bf5b0"></script>
+</div>
+<!-- Adsterra Direct Link: clearly labeled sponsored link -->
+<div style="text-align:center;margin:16px auto;padding:10px;">
+  <a href="https://araplhn.org/4/38488d965c228d34f8119b7e889a9e1f" target="_blank" rel="nofollow sponsored noopener">Sponsored Link</a>
+</div>
+
 </body>
 </html>
